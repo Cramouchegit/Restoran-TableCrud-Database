@@ -1,0 +1,108 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica;
+}
+
+header {
+  display: flex;
+  background-color: crimson;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.right {
+  display: flex;
+  gap: 16px;
+}
+
+.container {
+  display: flex;
+  /* background-color: aqua; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid black; */
+  padding: 8px;
+  width: 35%;
+  height: 180px;
+  cursor: pointer;
+  box-shadow: #eaeaea 0 4px 8px 4px;
+}
+
+.card:hover {
+  scale: 1.035;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Menengahkan form */
+.super-center {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form input,
+form button {
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+input {
+  border: transparent;
+  background-color: #eaeaea;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: crimson;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #b50e30;
+  transition: all 0.3s ease-in-out;
+}
